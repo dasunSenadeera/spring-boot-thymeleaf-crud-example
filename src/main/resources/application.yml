@@ -1,0 +1,17 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    max-idle: 5
+    min-idle: 1
+    password: 1234
+    test-on-borrow: true
+    test-while-idle: true
+    url: jdbc:mysql://localhost:3306/thymeleafCrud?createDatabaseIfNotExist=true
+    username: root
+    validation-query: SELECT 1
+  jpa:
+    hibernate:
+      ddl-auto: update
